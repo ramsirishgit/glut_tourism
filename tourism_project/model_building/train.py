@@ -17,6 +17,8 @@ from huggingface_hub import login, HfApi, create_repo
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 import mlflow
 
+experiment_name = "Ram_GLUT_Tourism_Experimentation"
+
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment(experiment_name)
 
